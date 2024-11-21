@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Aron Class Info</title>
+    <style>
+        body {
+            color: red;
+            background-color: rgb(171, 162, 162);
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        .hidden-content {
+            display: none; /* Initially hidden */
+            color: white;
+            text-align: left;
+            margin-top: 20px;
+        }
+        input[type="password"] {
+            margin-bottom: 20px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid red;
+            border-radius: 5px;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Enter Passcode</h1>
+    <input id="passcode" type="password" placeholder="Enter passcode" />
+    
+    <!-- Hidden content -->
+    <div id="content" class="hidden-content">
+        <h2>--- Add Text Here that says: Class: 4p ---</h2>
+        <div>
+            <p>Add text here that has the word: **All classmates**, and under it say all the classmates, which are:</p>
+            <p>
+                Aron (Me), Aros, Brendon, Ilav, Nicole, Shyan (but her as the last name because she's a Karen 
+                <b>(DO NOT TYPE THAT)</b>), Mali, Arffa, Shikima, Amera, Patrick, Giovani, Tamiam, Iamal, 
+                Hider/Muhhmed, Hanial, Amal, Amilia, etc.
+            </p>
+        </div>
+
+        <div>
+            <h3>Class Levels:</h3>
+            <p class="construction">Add here in construction.</p>
+        </div>
+
+        <div>
+            <p>
+                Add the new link that will be called: 
+                <a href="#" style="color: red;">WWW.AronClassInfo.cc</a>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        const passcodeInput = document.getElementById("passcode");
+        const content = document.getElementById("content");
+
+        passcodeInput.addEventListener("input", () => {
+            if (passcodeInput.value === "12323") {
+                document.body.style.backgroundColor = "black"; // Change background to black
+                passcodeInput.style.display = "none"; // Hide the input field
+                content.style.display = "block"; // Show the hidden content
+            }
+        });
+    </script>
+</body>
+</html>
+
